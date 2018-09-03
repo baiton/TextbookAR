@@ -64,7 +64,7 @@ class ClcCover extends Component {
     return (
         <ViroARImageMarker target={"ClcCover"}>
           {/* Needs animation to lift upright */}
-          <ViroVideo height={.28} width={.23} position={[0, .15, -0.2]} rotation={[0, 0, 0]} source={require('../res/lookLeft.mov')} loop={false} materials={["chromaKeyFilteredVideo"]}/>
+          <ViroVideo height={.28} width={.23} position={[0, .15, -0.2]} rotation={[0, 0, 0]} source={require('../res/TextbookAR.mov')} loop={false} materials={["chromaKeyFilteredVideo"]}/>
           {/* Insert series of bubbles here */}
         <ViroNode position={[0,0,0]} animation={{name: 'dissolveIn', delay:1000, run:true, loop:false}}>
           <ViroNode position={[0,0,0]} animation={{name:'rotatePositive', run:true, loop:true}} >
