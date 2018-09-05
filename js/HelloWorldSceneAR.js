@@ -24,6 +24,7 @@ import {
   ViroNode
 } from 'react-viro';
 
+import Citadel from './components/Citadel'
 import ClcCover from './components/ClcCover'
 import Milestones from './components/Milestones'
 
@@ -57,8 +58,9 @@ export default class HelloWorldSceneAR extends Component {
       <ViroARScene onTrackingUpdated={this._onInitialized}>
 
         <ViroText text={this.state.introText} scale={[.01, .01, .01]} position={[0, 0, -1]} style={styles.lookForCover}/>
-        <ClcCover />
-        <Milestones />
+        {/* <ClcCover /> */}
+        {/* <Milestones /> */}
+        <Citadel />
 
         {/* Having issues connecting materials to model */}
         {/* <ViroARImageMarker target={"ClcCover"}>
